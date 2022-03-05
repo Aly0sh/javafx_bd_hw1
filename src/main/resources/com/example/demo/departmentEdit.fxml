@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="350.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Controller.DepartmentEditController">
+    <children>
+        <TextField fx:id="Dname" layoutX="24.0" layoutY="37.0" prefHeight="25.0" prefWidth="255.0" />
+        <Label layoutX="24.0" layoutY="20.0" text="Название отдела" />
+        <TextField fx:id="Dnumber" layoutX="24.0" layoutY="100.0" prefHeight="25.0" prefWidth="255.0" />
+        <Label layoutX="24.0" layoutY="79.0" text="Номер отдела" />
+        <ComboBox fx:id="Mgr_ssn" layoutX="300.0" layoutY="100.0" prefHeight="26.0" prefWidth="255.0" promptText="Выберите ssn" />
+        <Label layoutX="300.0" layoutY="79.0" text="Ssn Менеджера" />
+        <Label layoutX="300.0" layoutY="20.0" text="Дата началы работы Менеджера" />
+        <DatePicker fx:id="Mgr_start_date" layoutX="300.0" layoutY="37.0" prefHeight="25.0" prefWidth="255.0" />
+
+        <Button fx:id="submitButton" layoutX="250.0" layoutY="284.0" mnemonicParsing="false" onAction="#updateDepartment" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #0098f0;" text="Изменить" textFill="WHITE">
+            <font>
+                <Font name="Calibri Bold" size="15.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
