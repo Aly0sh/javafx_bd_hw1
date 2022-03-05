@@ -92,7 +92,7 @@ public class DepartmentCreateController {
             Stage stage = new Stage();
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("departmentTable.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 700, 450);
-            stage.setTitle("База отделов");
+            stage.setTitle("Department base");
             stage.setScene(scene);
             stage.show();
             ((Node)(event.getSource())).getScene().getWindow().hide();

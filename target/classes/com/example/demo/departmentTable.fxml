@@ -10,15 +10,15 @@
     <children>
         <TableView fx:id="departmentTable"  prefHeight="368.0" prefWidth="730.0">
             <columns>
-                <TableColumn fx:id="Dname" prefWidth="100.0" text="Название" />
-                <TableColumn fx:id="Dnumber" prefWidth="100.0" text="Номер отдела"/>
-                <TableColumn fx:id="Mgr_ssn" prefWidth="100.0" text="Ssn менеджера" />
-                <TableColumn fx:id="Mgr_start_date" prefWidth="100.0" text="Начало работы" />
-                <TableColumn fx:id="editColumn" prefWidth="90.0" text="Изменение" />
-                <TableColumn fx:id="deleteColumn" prefWidth="90.0" resizable="false" text="Удаление" />
+                <TableColumn fx:id="Dname" prefWidth="100.0" text="Name" />
+                <TableColumn fx:id="Dnumber" prefWidth="100.0" text="Number"/>
+                <TableColumn fx:id="Mgr_ssn" prefWidth="100.0" text="Mgr ssn" />
+                <TableColumn fx:id="Mgr_start_date" prefWidth="100.0" text="Mgr start date" />
+                <TableColumn fx:id="editColumn" prefWidth="90.0" text="Redact" />
+                <TableColumn fx:id="deleteColumn" prefWidth="90.0" resizable="false" text="Delete" />
             </columns>
         </TableView>
-        <Button fx:id="addButton" onAction="#openCreatePage" defaultButton="true" layoutX="200.0" layoutY="395.0" mnemonicParsing="false" prefHeight="8.0" prefWidth="300.0" text="Создать" textAlignment="CENTER">
+        <Button fx:id="addButton" onAction="#openCreatePage" defaultButton="true" layoutX="200.0" layoutY="395.0" mnemonicParsing="false" prefHeight="8.0" prefWidth="300.0" text="Add new department" textAlignment="CENTER">
             <font>
                 <Font size="15.0" />
             </font>

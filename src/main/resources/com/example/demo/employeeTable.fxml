@@ -10,17 +10,17 @@
     <children>
         <TableView fx:id="employeeTable"  prefHeight="368.0" prefWidth="730.0">
             <columns>
-                <TableColumn fx:id="fNameColumn" prefWidth="100.0" text="Имя" />
-                <TableColumn fx:id="lNameColumn" prefWidth="100.0" text="Фамилия" />
+                <TableColumn fx:id="fNameColumn" prefWidth="100.0" text="Fname" />
+                <TableColumn fx:id="lNameColumn" prefWidth="100.0" text="Lname" />
                 <TableColumn fx:id="ssnColumn" prefWidth="100.0" text="Ssn" />
-                <TableColumn fx:id="bdateColumn" prefWidth="100.0" text="Дата рождения" />
-                <TableColumn fx:id="addressColumn" prefWidth="100.0" text="Адрес" />
-                <TableColumn fx:id="sexColumn" prefWidth="50.0" text="Пол" />
-                <TableColumn fx:id="editColumn" prefWidth="90.0" text="Изменение" />
-                <TableColumn fx:id="deleteColumn" prefWidth="90.0" resizable="false" text="Удаление" />
+                <TableColumn fx:id="bdateColumn" prefWidth="100.0" text="Birthday" />
+                <TableColumn fx:id="addressColumn" prefWidth="100.0" text="Address" />
+                <TableColumn fx:id="sexColumn" prefWidth="50.0" text="Sex" />
+                <TableColumn fx:id="editColumn" prefWidth="90.0" text="Redact" />
+                <TableColumn fx:id="deleteColumn" prefWidth="90.0" resizable="false" text="Delete" />
             </columns>
         </TableView>
-        <Button fx:id="addButton" onAction="#openCreatePage" defaultButton="true" layoutX="200.0" layoutY="395.0" mnemonicParsing="false" prefHeight="8.0" prefWidth="300.0" text="Добавить новую запись" textAlignment="CENTER">
+        <Button fx:id="addButton" onAction="#openCreatePage" defaultButton="true" layoutX="200.0" layoutY="395.0" mnemonicParsing="false" prefHeight="8.0" prefWidth="300.0" text="Add new employee" textAlignment="CENTER">
             <font>
                 <Font size="15.0" />
             </font>

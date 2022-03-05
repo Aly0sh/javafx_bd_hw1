@@ -22,7 +22,7 @@ public class MenuController {
             Stage stage = new Stage();
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("employeeTable.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 730, 450);
-            stage.setTitle("База сотрудников");
+            stage.setTitle("Employees base");
             stage.setScene(scene);
             stage.show();
         }
@@ -36,7 +36,7 @@ public class MenuController {
             Stage stage = new Stage();
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("departmentTable.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 700, 600);
-            stage.setTitle("База отделов");
+            stage.setTitle("Departments base");
             stage.setScene(scene);
             stage.show();
         } catch (Exception e) {

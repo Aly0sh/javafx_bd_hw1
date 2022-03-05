@@ -49,7 +49,7 @@ public class DepartmentTableController {
         initializeTableValues();
 
         editColumn.setCellFactory(param -> new TableCell<Department, Department>() {
-            private final Button editButton = new Button("Изменить");
+            private final Button editButton = new Button("Redact");
 
             @Override
             protected void updateItem(Department department, boolean empty) {
@@ -66,7 +66,7 @@ public class DepartmentTableController {
         });
 
         deleteColumn.setCellFactory(param -> new TableCell<Department, Department>() {
-            private final Button deleteButton = new Button("Удалить");
+            private final Button deleteButton = new Button("Delete");
 
             @Override
             protected void updateItem(Department department, boolean empty) {
@@ -94,7 +94,7 @@ public class DepartmentTableController {
             Stage stage = new Stage();
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("departmentEdit.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 700, 450);
-            stage.setTitle("Редактирование сотрудника");
+            stage.setTitle("Department redact");
             stage.setScene(scene);
             DepartmentEditController controller = fxmlLoader.<DepartmentEditController>getController();
             controller.setDepartment(department);
@@ -119,7 +119,7 @@ public class DepartmentTableController {
             Stage stage = new Stage();
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("departmentCreate.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 700, 450);
-            stage.setTitle("Добавление отдела");
+            stage.setTitle("Add department");
             stage.setScene(scene);
             stage.show();
 

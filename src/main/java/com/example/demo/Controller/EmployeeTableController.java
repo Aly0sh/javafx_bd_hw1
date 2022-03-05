@@ -53,7 +53,7 @@ public class EmployeeTableController {
         initializeTableValues();
 
         editColumn.setCellFactory(param -> new TableCell<Employee, Employee>() {
-            private final Button editButton = new Button("Изменить");
+            private final Button editButton = new Button("Redact");
 
             @Override
             protected void updateItem(Employee employee, boolean empty) {
@@ -70,7 +70,7 @@ public class EmployeeTableController {
         });
 
         deleteColumn.setCellFactory(param -> new TableCell<Employee, Employee>() {
-            private final Button deleteButton = new Button("Удалить");
+            private final Button deleteButton = new Button("Delete");
 
             @Override
             protected void updateItem(Employee employee, boolean empty) {
@@ -98,7 +98,7 @@ public class EmployeeTableController {
             Stage stage = new Stage();
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("employeeEdit.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 700, 450);
-            stage.setTitle("Редактирование сотрудника");
+            stage.setTitle("Employee edit");
             stage.setScene(scene);
             EmployeeEditController controller = fxmlLoader.<EmployeeEditController>getController();
             controller.setEmployee(employee);
@@ -123,7 +123,7 @@ public class EmployeeTableController {
             Stage stage = new Stage();
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("employeeCreate.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 700, 450);
-            stage.setTitle("Добавление сотрудника");
+            stage.setTitle("Create employee");
             stage.setScene(scene);
             stage.show();
 
